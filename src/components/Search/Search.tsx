@@ -12,6 +12,7 @@ const Search = ({ loadUser }: SearchProps) => {
   const handleKeyDown = (ev: React.KeyboardEvent<HTMLInputElement>) => {
     if (ev.key === "Enter") {
       loadUser(username)
+      setUsername("")
     }
   }
 
@@ -20,6 +21,7 @@ const Search = ({ loadUser }: SearchProps) => {
       <input
         className={styles.input} 
         type="text" 
+        value={username}
         placeholder='Digite um usuário do GitHub' 
         onChange={(ev) => setUsername(ev.target.value)} 
         onKeyDown={handleKeyDown}
@@ -27,7 +29,10 @@ const Search = ({ loadUser }: SearchProps) => {
       <button 
         className={styles.button} 
         type='button' 
-        onClick={() => loadUser(username)}
+        onClick={() => {
+          loadUser(username)
+          setUsername("")
+        }}
       >
         <BsSearch className={styles.icon}/>
       </button>

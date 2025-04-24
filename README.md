@@ -1,54 +1,36 @@
-# React + TypeScript + Vite
+# GitHub Profile Finder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Screenshot do Aplicativo](./public/screenshot.png)
 
-Currently, two official plugins are available:
+### React + TypeScript + Vite
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## 📌 Visão Geral
+Este projeto permite buscar informações de usuários do **GitHub** através da API pública da plataforma.  
+Ao inserir um nome de usuário, a aplicação retorna:
+- 📷 **Imagem de perfil**
+- 🏷️ **Nome de usuário**
+- 📝 **Biografia**  
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+O objetivo é criar uma ferramenta simples e intuitiva para visualizar perfis do GitHub rapidamente.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🛠 Tecnologias Utilizadas
+- ⚛️ **React** - Framework para construção da interface  
+- 🏗️ **TypeScript** - Tipagem segura para JavaScript  
+- 🎨 **CSS Modules** - Estilização modular  
+- 🌍 **Fetch API** - Para consumo da API do GitHub  
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📚 O Que Foi Aprendido?
+Durante o desenvolvimento deste projeto, foram explorados conceitos importantes, como:
+- **Uso de API REST** para buscar dados externos  
+- **Gerenciamento de estado com `useState`** para atualizar a interface dinamicamente  
+- **Manipulação de eventos (`onKeyDown`, `onClick`)** para interações fluidas  
+- **Tratamento de erros e validação** para garantir uma experiência do usuário mais refinada  
+- **Indicador de carregamento (Loading)** para melhorar a experiência do usuário e fornecer um feedback visual enquanto os dados da API estão sendo buscados.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## ⚙️ Funcionalidades
+- 🔎 **Busca de usuários GitHub** através da API oficial  
+- 📊 **Exibição dinâmica** das informações do perfil  
+- ❌ **Tratamento de erros** caso o usuário não seja encontrado  
+- ⏳ **Indicador de carregamento** ao buscar dados  

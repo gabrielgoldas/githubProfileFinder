@@ -35,3 +35,19 @@
 .icon {
   font-size: 1.25rem;
 }
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 55vw;
+  }
+
+  .input {
+    padding: 2.2vh 1.5vw;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .container {
+    width: 90%;
+  }
+}

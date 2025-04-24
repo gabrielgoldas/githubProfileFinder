@@ -7,10 +7,15 @@
 
 body {
   background-color: #1f1f1f;
+  background-image: url('./assets/gradiente1.png'), url('./assets/gradient2.png'), url('./assets/Camada_1.png');
+  background-position: top right, bottom left, 5% 4% ;
+  background-size: contain, 35vh, 12vw;
+  background-repeat: no-repeat, no-repeat, no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; 
+  height: 100vh;
+  padding: 1rem;
 }
 
 a {

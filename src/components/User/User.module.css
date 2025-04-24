@@ -29,3 +29,30 @@
 .bio {
   font-size: small;
 }
+
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    width: 90%;
+    gap: .5rem;
+  }
+
+  .avatar {
+    max-width: 25vw;
+  }
+
+  .content {
+    align-items: center;
+    gap: .5rem;
+  }
+
+  .bio {
+    text-align: center;
+  } 
+}
+
+@media screen and (max-width: 425px) {
+  .avatar {
+    max-width: 35vw;
+  }
+}

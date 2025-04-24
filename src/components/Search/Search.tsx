@@ -29,7 +29,7 @@ const Search = ({ loadUser }: SearchProps) => {
         type='button' 
         onClick={() => loadUser(username)}
       >
-        <BsSearch />
+        <BsSearch className={styles.icon}/>
       </button>
     </div>
   )

@@ -1,0 +1,13 @@
+.loading_container {
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  width: 45px;
+  color: #fff;
+  filter: invert(100%) brightness(80%);
+}

@@ -30,6 +30,7 @@
 @media screen and (max-width: 600px) {
   .app {
     padding: 1rem .5rem;
+    gap: 1rem;
   }
 
   .title h1 {
@@ -43,7 +44,7 @@
 
 @media screen and (max-width: 425px) {
   .app {
-    padding: 1rem .5rem;
+    gap: .8rem;
   }
 
   .title h1 {
@@ -52,11 +53,5 @@
   
   .github_img {
     width: 7.5vw;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .app {
-    gap: .5rem;
   }
 }

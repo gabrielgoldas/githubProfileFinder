@@ -3,9 +3,10 @@
   padding: 1rem 1.5rem;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 2rem;
   border-radius: 1rem;
-  width: 55vw;
+  max-width: 55vw;
 }
 
 .avatar {
@@ -30,6 +31,16 @@
   font-size: small;
 }
 
+@media screen and (min-width: 1440px) {
+  .login {
+    font-size: 1.6vw;
+  }
+  
+  .bio {
+    font-size: 1.1vw;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .container {
     flex-direction: column;
@@ -52,6 +63,10 @@
 }
 
 @media screen and (max-width: 425px) {
+  .container {
+    max-width: 90%;
+  }
+
   .avatar {
     max-width: 35vw;
   }

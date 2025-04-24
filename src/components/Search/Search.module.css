@@ -5,7 +5,7 @@
 
 .input {
   width: 100%;
-  padding: 2vh 1vw;
+  padding: 3.5% 1vw;
   padding-right: 40px; /* Espaço para o botão */
   box-sizing: border-box;
   border-radius: .5rem;
@@ -26,7 +26,7 @@
   right: 0;
   top: 0;
   height: 100%;
-  width: 50px;
+  width: 13%;
   background-color: #005cff;
   border: 1px solid #fff;
   color: white;
@@ -47,18 +47,32 @@
   font-size: 1.25rem;
 }
 
+@media screen and (min-width: 1440px) {
+  .input {
+    font-size: 1.2vw;
+  }
+
+  .icon {
+    font-size: 1.5rem;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .container {
     width: 55vw;
-  }
-
-  .input {
-    padding: 2.2vh 1.5vw;
   }
 }
 
 @media screen and (max-width: 425px) {
   .container {
     width: 90%;
+  }
+
+  .icon {
+    font-size: 1rem;
+  }
+
+  .button {
+    width: 15%;
   }
 }

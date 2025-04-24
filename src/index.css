@@ -4,3 +4,15 @@
   box-sizing: border-box;
   font-family: "Nunito Sans", sans-serif;
 }
+
+body {
+  background-color: #1f1f1f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+}
+
+a {
+  text-decoration: none;
+}

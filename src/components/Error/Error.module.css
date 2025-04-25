@@ -12,3 +12,9 @@
     width: 90%;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .container p {
+    font-size: 1.5vw;
+  }
+}
